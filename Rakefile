@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Rails3test::Application.load_tasks
+WorldUnitingOrg::Application.load_tasks
