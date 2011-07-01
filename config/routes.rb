@@ -1,4 +1,4 @@
-Rails3test::Application.routes.draw do
+WorldUnitingOrg::Application.routes.draw do
   get "home/index"
   root :to => 'home#index'
 end
