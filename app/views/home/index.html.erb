@@ -1,7 +1,14 @@
 <center>
 	<%= image_tag "wu_logo_new.png", :id => "logo" %>
 	<p>(Website is soon to come. Thank you for your patience.)</p>
-	<p><%= image_tag "donate_button.png" %></p>
+	<p>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="NKZ3CUPU3FJUN">
+		<input type="image" src="http://worlduniting.org/assets/donate_button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+	</p>
 	<hr />
 	
 	<p><a href="http://twitter.com/worlduniting/"><%= image_tag "twitter_icon.gif" %></a></p>
