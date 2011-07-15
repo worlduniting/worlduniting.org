@@ -1,0 +1,129 @@
+a {
+  color: $wu-purple;
+	text-decoration: none;
+  &:hover { color: #aaa; }
+  &:visited { color: $wu-purple; }
+}
+
+#home-navigaton-container {
+	float:left;
+	width:500px;
+}
+
+
+/*------          Subnavigation         ------------*/
+
+#sub-navigaton-container {
+	float:left;
+	width:500px;
+}
+ul#sub-navigation
+{
+	margin-left: 50px;
+	padding-left: 0;
+	white-space: nowrap;
+}
+
+#sub-navigation li
+{
+	display: inline;
+	list-style-type: none;
+}
+
+#sub-navigation a { 
+	padding: 5px 10px;
+	color: #aaa;
+}
+
+#sub-navigation a:link, #sub-navigation a:visited
+{
+	color: #fff;
+	background-color: #ccc;
+	text-decoration: none;
+}
+
+#sub-navigation a:hover
+{
+	color: #666;
+	text-decoration: underline;
+}
+
+
+
+ul#navlist
+{
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+}
+
+#navlist a { 
+	padding: 5px 15px;
+	margin-right: 10px; 
+}
+
+#navlist a:link, #navlist a:visited
+{
+color: #fff;
+background-color: #999;
+text-decoration: none;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#navlist a:hover
+{
+color: #fff;
+background-color: #ccc;
+text-decoration: none;
+}
+
+#navlist li a#current
+{
+background: #6b1c8a;
+}
+
+
+
+
+
+ul#subnavlist
+{
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+}
+
+#subnavlist li
+{
+display: inline;
+list-style-type: none;
+}
+
+#subnavlist a { 
+	padding: 5px 10px;
+	margin-right: 5px; 
+}
+
+#subnavlist a:link, #subnavlist a:visited
+{
+color: #999;
+text-decoration: none;
+}
+
+#subnavlist a:hover
+{
+color: #ccc;
+text-decoration: none;
+}
+
+#subnavlist li a#current
+{
+color: #6b1c8a;
+}

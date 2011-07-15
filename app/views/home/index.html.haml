@@ -1,0 +1,27 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li{ :id => "active" }
+			= link_to "About Us", { :controller => "/about" }, :id => "current"
+		%li
+			= link_to "Programs", { :controller => "/about"}
+		%li
+			= link_to "Contact Us", { :controller => "/about"}
+		%li
+			= link_to "Get Involved", { :controller => "/about"}
+			
+#wrapper
+	#front_content
+		= image_tag "be_unique_slug.jpg", :id => "unique", :alt => "be unique."
+
+= render "layouts/right_sidebar"
+
+#lower_content_left
+	%h1
+		Recent Stuff
+	%hr
+	%p
+		%em July 4th - 
+		%a World Uniting Incorporates
+			
+#lower_content_right
+	= link_to image_tag( "featured_book.png", :title => "Featured Book", :border => "0"), "http://dathompson.com/amazon", :target => "_blank", :title => "Featured Book"
