@@ -11,44 +11,6 @@ a {
 }
 
 
-/*------          Subnavigation         ------------*/
-
-#sub-navigaton-container {
-	float:left;
-	width:500px;
-}
-ul#sub-navigation
-{
-	margin-left: 50px;
-	padding-left: 0;
-	white-space: nowrap;
-}
-
-#sub-navigation li
-{
-	display: inline;
-	list-style-type: none;
-}
-
-#sub-navigation a { 
-	padding: 5px 10px;
-	color: #aaa;
-}
-
-#sub-navigation a:link, #sub-navigation a:visited
-{
-	color: #fff;
-	background-color: #ccc;
-	text-decoration: none;
-}
-
-#sub-navigation a:hover
-{
-	color: #666;
-	text-decoration: underline;
-}
-
-
 
 ul#navlist
 {
@@ -80,7 +42,7 @@ border-radius: 5px;
 #navlist a:hover
 {
 color: #fff;
-background-color: #ccc;
+background-color: #aaa;
 text-decoration: none;
 }
 
@@ -88,7 +50,6 @@ text-decoration: none;
 {
 background: #6b1c8a;
 }
-
 
 
 
@@ -119,11 +80,13 @@ text-decoration: none;
 
 #subnavlist a:hover
 {
-color: #ccc;
+color: $wu_purple;
 text-decoration: none;
 }
 
 #subnavlist li a#current
 {
 color: #6b1c8a;
+
+font-weight: bold;
 }

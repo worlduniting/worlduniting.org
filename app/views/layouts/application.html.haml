@@ -1,11 +1,12 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
 	%head
 		%title World Uniting - for the rest of the family.
-		= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:100&v2", :rel => "stylesheet", :type => "text/css"
 		%meta{ :name => "description", :content => "Providing non-profit outreach and education within majority people groups on behalf of underrepresented persons for religiously and socially conflicting issues. World Uniting’s uniqueness is its approach, bringing conversation to majority perspectives by speaking within their framework and point of view, in order to provide empathy, awareness, and repositioning of majority policies that alienate minority persons."}/
 		= stylesheet_link_tag "application"
 		= javascript_include_tag "application"
 		= csrf_meta_tags
+		%link{ :rel => "icon", :type => "image/png", :href => "/assets/favicon.png"}
+		%link{ :ref => "shortcut icon", :type= => "image/x-icon", :href => "/assets/favicon.png"}
 		%script{ :type => "text/javascript"}
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-24287584-1']);
@@ -23,8 +24,8 @@
 
 				
 				#top-navigation
-					= link_to ">Blog", "http://worlduniting.blogger.org"
-					%a >Contact
+					= link_to ">Blog", "http://worlduniting.blogspot.com", :target => "_blank"
+					= link_to ">Contact", {:controller => "/contact"}
 		
 			= yield
 

@@ -1,13 +1,15 @@
 #home-navigation-container
 	%ul{ :id => "navlist" }
 		%li{ :id => "active" }
-			= link_to "About Us", { :controller => "/about" }, :id => "current"
+			= link_to "Home", { :controller => "/home" }, :id => "current"
 		%li
-			= link_to "Programs", { :controller => "/about"}
+			= link_to "About Us", { :controller => "/about" }
 		%li
-			= link_to "Contact Us", { :controller => "/about"}
+			= link_to "Programs", { :controller => "/programs"}
 		%li
-			= link_to "Get Involved", { :controller => "/about"}
+			= link_to "Contact Us", { :controller => "/contact"}
+		%li
+			= link_to "Get Involved", { :controller => "/get_involved"}
 			
 #wrapper
 	#front_content
