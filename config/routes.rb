@@ -1,5 +1,6 @@
 WorldUnitingOrg::Application.routes.draw do
   
+  match 'about' => 'about/mission_vision#index'
   match 'about/mission_vision' => 'about/mission_vision#index'
   match 'about/board_staff' => 'about/board_staff#index'
   match 'about/opportunities' => 'about/opportunities#index'
