@@ -5,6 +5,11 @@
 		%meta{ :name => "description", :content => "Providing non-profit outreach and education within majority people groups on behalf of underrepresented persons for religiously and socially conflicting issues. World Uniting’s uniqueness is its approach, bringing conversation to majority perspectives by speaking within their framework and point of view, in order to provide empathy, awareness, and repositioning of majority policies that alienate minority persons."}/
 		%link{ :rel => "image_src", :href => "http://worlduniting.org.dev/assets/image.png"}
 		= stylesheet_link_tag "application"
+		/[if IE]
+			%script{ :type => "text/css" }
+				body {
+					text-align: center;
+					}
 		= javascript_include_tag "application"
 		= csrf_meta_tags
 		%link{ :rel => "icon", :type => "image/png", :href => "/assets/favicon.png"}
