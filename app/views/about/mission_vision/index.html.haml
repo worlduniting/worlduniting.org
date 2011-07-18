@@ -1,0 +1,49 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li
+			= link_to "Home", { :controller => "/home" }
+		%li{ :id => "active" }
+			= link_to "About Us", {:controller => "/about"}, :id => "current"
+		%li
+			= link_to "Programs", {:controller => "/programs"}
+		%li
+			= link_to "Contact Us", {:controller => "/contact"}
+		%li
+			= link_to "Get Involved", {:controller => "/get_involved"}
+
+	%ul{ :id => "subnavlist" }
+		%li{ :id => "active" }
+			= link_to "Mission & Vision", {:controller => "/about/mission_vision"}, :id => "current"
+		%li
+			= link_to "Board & Staff", {:controller => "/about/board_staff"}
+		%li
+			= link_to "Opportunities", {:controller => "/about/opportunities"}
+		%li
+			= link_to "Financials & Downloads", {:controller => "/about/financials_downloads"}		
+			
+#wrapper
+	#content
+		%h1 Mission & Vision
+		%h2 Mission
+		%hr
+			%p 
+				World Uniting’s mission is to provide outreach and education to majority people groups on behalf 
+				of underrepresented persons for religiously and socially conflicting issues. World Uniting’s uniqueness 
+				is its approach, bringing conversation to majority opinions by speaking within their framework and point 
+				of view, in order to provide empathy, awareness, and repo- sitioning of majority policies that 
+				alienate minority persons.
+		%h2 Vision
+		%hr
+			%p
+				World Uniting envisions a world where uniqueness is valued for the challenge it provides to the 
+				presumption of the majority, where family is a choice for understanding over conformity.
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+
+= render "layouts/right_sidebar"
+	

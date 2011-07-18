@@ -1,4 +1,7 @@
 #right_sidebar	
+	#social_media
+		= link_to image_tag( "facebook.png", :title => "Facebook", :border => "0"), "http://www.facebook.com/pages/World-Uniting/214989735202747", :target => "_blank", :title => "Facebook"
+		= link_to image_tag( "twitter_icon.gif", :title => "Twitter", :border => "0"), "http://www.twitter.com/worlduniting", :target => "_blank", :title => "Twitter"
 	%p
 		%form{ :action => "https://www.paypal.com/cgi-bin/webscr", :method => "post" }
 			%input{ :type => "hidden", :name => "cmd", :value => "_s-xclick" }

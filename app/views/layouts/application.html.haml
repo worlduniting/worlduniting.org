@@ -1,3 +1,4 @@
+!!!
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
 	%head
 		%title World Uniting - for the rest of the family.
@@ -25,6 +26,7 @@
 				
 				#top-navigation
 					= link_to ">Blog", "http://worlduniting.blogspot.com", :target => "_blank"
+					= link_to ">eNewsletter Signup", {:controller => "/contact"}
 					= link_to ">Contact", {:controller => "/contact"}
 		
 			= yield

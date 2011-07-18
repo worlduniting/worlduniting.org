@@ -1,0 +1,45 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li
+			= link_to "Home", { :controller => "/home" }
+		%li{ :id => "active" }
+			= link_to "About Us", {:controller => "/about"}
+		%li
+			= link_to "Programs", {:controller => "/programs"}
+		%li
+			= link_to "Contact Us", {:controller => "/contact"}
+		%li
+			= link_to "Get Involved", {:controller => "/get_involved"}, :id => "current"
+
+	%ul{ :id => "subnavlist" }
+		%li{ :id => "active" }
+			= link_to "Get Involved", {:controller => "/get_involved"}, :id => "current"
+			
+#wrapper
+	#content
+		%h1 Get Involved
+		%h2 Volunteer
+		%hr
+			%p 
+				We are anxious to meet you and have your efforts on the team. Did you know that you can volunteer
+				from anywhere. You can help us right from your own home.
+			%p
+				= mail_to "info@worlduniting.org?subject=Website%20Volunteer%20", "Send us an Email for Inquiries", :encode => "javascript"
+			%p
+				Here is just a short list of things we can use your help doing from your own home:
+			%ul
+				%li
+					Share your contact list of people and pastors you think might be open to talk about gay and 
+					lesbian people in their congregations.
+				%li
+					Personally ask your pastor or friend to talk with one of our staff.
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+
+= render "layouts/right_sidebar"
+	

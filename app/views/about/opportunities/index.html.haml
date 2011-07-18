@@ -1,0 +1,63 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li
+			= link_to "Home", { :controller => "/home" }
+		%li{ :id => "active" }
+			= link_to "About Us", {:controller => "/about"}, :id => "current"
+		%li
+			= link_to "Programs", {:controller => "/programs"}
+		%li
+			= link_to "Contact Us", {:controller => "/contact"}
+		%li
+			= link_to "Get Involved", {:controller => "/get_involved"}
+
+	%ul{ :id => "subnavlist" }
+		%li{ :id => "active" }
+			= link_to "Mission & Vision", {:controller => "/about/mission_vision"}
+		%li
+			= link_to "Board & Staff", {:controller => "/about/board_staff"}
+		%li
+			= link_to "Opportunities", {:controller => "/about/opportunities"}, :id => "current"
+		%li
+			= link_to "Financials & Downloads", {:controller => "/about/financials_downloads"}		
+			
+#wrapper
+	#content
+		%h1 Opportunities
+		%p 
+			Every single person who serves as a board member or staff person has put volunteer time and effort into our mission and vision. Please consider taking on one of our volunteer positions, or let us know if you have ideas on how to expand our programs and/or opportunities.
+		%h2 Volunteer Positions
+		%hr
+		%p 
+			= mail_to "press@worlduniting.org?subject=Website%20Opportunity%20Posting", "Send us an Email for Inquiries", :encode => "javascript"
+		%h3 Seeking: Director of Publishing
+		%p World Uniting has recently acquired a publishing department from a local publishing company. We are looking for someone to run this new publishing program, called “World Uniting Press” (WUP). This will be a volunteer position until the program can sustain the payroll for this full-time position. Pay will be implemented progressively based upon a percentage of earnings from the program until the position's payroll is reached in full.
+
+		%p World Uniting’s mission is to provide nonprofit outreach and education within majority people groups on behalf of underrepresented persons for religiously and socially conflicting issues. World Uniting’s uniqueness is its approach, bringing conversation to majority opinions by speaking within their framework and point of view, in order to provide empathy, awareness, and repositioning of majority policies that alienate minority persons.
+
+		%p Our current minority issue is speaking to conservative faith churches concerning the membership of gay partnered persons in their congregation. Whereas WUP will publish works which support this issue, WUP will also publisher authors who may represent other issues that fit within World Uniting’s general mission statement.
+
+		%p 
+			Volunteer Position Description:
+			%ul
+				%li Oversee implementation of the strategic plan for World Uniting Press (WUP)
+				%li Work with existing authors in the publishing pipeline (one children's book and a couple fiction)
+				%li Handle contract signing, negotiations, and fulfillment with authors and publicist agencies
+				%li Develop new royalties implementation between WUP, author, and managing agents
+				%li Serve as primary editor, having final responsibility for the product, operations and policies
+				%li Oversee publishing pipeline, from manuscript to market, including editing, Focus Group testing, distribution and royalty tracking
+				%li Report and work with World Uniting Board to implement strategic plans and provide reflection for future goals
+				%li Oversee marketing goals and recruitment of authors and managing agents
+
+		%p 
+			Requirements:
+			%ul
+				%li Excellent writing and communication skills
+				%li Detail oriented
+				%li Ability to work within a startup environment with aggressive goals, timelines, and among creative people
+				%li Strong familiarity with Spreadsheet and Document Editing software
+				%li Familiarity with XML, Docbook, ePub, mobi and other tech publishing frameworks is strongly suggested, but not required
+				%li Familiarity with Photoshop, Illustrator, InDesign, and other print and graphics software is strongly suggested, but not required
+
+= render "layouts/right_sidebar"
+	

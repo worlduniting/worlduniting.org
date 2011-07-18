@@ -1,0 +1,34 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li
+			= link_to "Home", { :controller => "/home" }
+		%li{ :id => "active" }
+			= link_to "About Us", {:controller => "/about"}
+		%li
+			= link_to "Programs", {:controller => "/programs"}
+		%li
+			= link_to "Contact Us", {:controller => "/contact"}, :id => "current"
+		%li
+			= link_to "Get Involved", {:controller => "/get_involved"}
+
+	%ul{ :id => "subnavlist" }
+		%li
+			= link_to "Contact", {:controller => "/contact"}
+		%li{ :id => "active" }
+			= link_to "eNewsletter Signup", {:controller => "/contact/enewsletter"}, :id => "current"
+#wrapper
+	#content
+		%h1 We'd like to tell you more!
+
+		%p
+		= render "layouts/sign_up_form"
+		
+		%h2 Other Contacts
+		%hr
+			%p
+				%a{:href => "http://www.facebook.com/pages/World-Uniting/214989735202747", :target => "_blank"} http://www.facebook.com/worlduniting
+			%p
+				%a{:href => "http://twitter.com/worlduniting", :target => "_blank"} http://twitter.com/worlduniting
+
+= render "layouts/right_sidebar"
+	

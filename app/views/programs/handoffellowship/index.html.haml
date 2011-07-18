@@ -1,0 +1,48 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li
+			= link_to "Home", { :controller => "/home" }
+		%li{ :id => "active" }
+			= link_to "About Us", {:controller => "/about"}
+		%li
+			= link_to "Programs", {:controller => "/programs"}, :id => "current"
+		%li
+			= link_to "Contact Us", {:controller => "/contact"}
+		%li
+			= link_to "Get Involved", {:controller => "/get_involved"}
+
+	%ul{ :id => "subnavlist" }
+		%li{ :id => "active" }
+			= link_to "World Uniting Press", {:controller => "/programs/press"}
+		%li
+			= link_to "Hand of Fellowship", {:controller => "/programs/handoffellowship"}, :id => "current"
+		%li
+			= link_to "Over Coffee Conversations", {:controller => "/programs/overcoffeeconversations"}
+			
+			
+#wrapper
+	#content
+		%h1 Hand Of Fellowship
+		%p{:id => "center"}
+			= image_tag "handoffellowship.png", :title => "Hand of Fellowship"
+		%h2 Summary
+		%hr
+			%p
+				The Hand of Fellowship (
+				= link_to "www.handoffellowship.org", "http://www.handoffellowship.org", :target => "_blank"
+				) program seeks to provide a means of discernment for conservative faith churches and organizations, and for the public, concerning the participation and fellowship of gay and lesbian persons in their membership.
+		%h2 Program Goals
+		%hr
+			%p 
+				The Hand of Fellowship Program intends to provide
+				%ul
+					%li
+						a scale (1-5) for churches to designate their particular welcoming of gay and lesbian people where membership and participation is concerned
+					%li
+						a searchable web-based database for discovering churches based upon their Hand of Fellowship designation
+					%li
+						a safe and structured method for conservative churches to consider the repositioning of their membership and fellowship rules for lesbian and gay persons, in accordance with their faith tenants
+				
+
+= render "layouts/right_sidebar"
+	

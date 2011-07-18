@@ -1,0 +1,64 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li
+			= link_to "Home", { :controller => "/home" }
+		%li{ :id => "active" }
+			= link_to "About Us", {:controller => "/about"}, :id => "current"
+		%li
+			= link_to "Programs", {:controller => "/programs"}
+		%li
+			= link_to "Contact Us", {:controller => "/contact"}
+		%li
+			= link_to "Get Involved", {:controller => "/get_involved"}
+
+	%ul{ :id => "subnavlist" }
+		%li{ :id => "active" }
+			= link_to "Mission & Vision", {:controller => "/about/mission_vision"}
+		%li
+			= link_to "Board & Staff", {:controller => "/about/board_staff"}, :id => "current"
+		%li
+			= link_to "Opportunities", {:controller => "/about/opportunities"}
+		%li
+			= link_to "Financials & Downloads", {:controller => "/about/financials_downloads"}		
+			
+#wrapper
+	#content
+		%h1 Board & Staff
+		%h2 Board Members
+		%hr
+		%h3 D.a. Thompson, President & Executive Director
+		%p
+			= image_tag "headshot_tmb.jpg", :hspace => "10px", :align => "left", :title => "D.a. Thompson"
+			D.a. Thompson brings over twenty years of experience in business management and entrepreneurship, including 
+			leadership in non-profit, political, small-business, and Fortune 500 companies. D.a. brings
+			a familiarity with nearly all angles of business, from incorporation through acquisition,  
+			bringing a well-rounded and street-smart perspective to his business ventures.
+		%p
+			D.a. is the author of "Over Coffee," a narrative piece couched in the coffee-house conversation between the 
+			author and a small-town pastor concerning a gay church member who desires to be partnered in the church. 
+			Over Coffee warmly introduces the reader to a conservative, faith-based dialogue for providing room on the 
+			pew in today’s most conservative churches for gay partnered persons.
+		%p
+			As a speaker and musician, D.a. brings a strong presence in public engagement, providing a unique
+			and disarming presentation to the hearts and minds of his audience.
+		
+		%h3 Corrigan Gommenginger, Treasurer
+		%p 
+			= image_tag "corrigan_headshot.jpg", :hspace => "10px", :border => "1", :align => "left", :title => "Corrigan Gommenginger"
+			Corrigan is currently the Director of Finance at a Pierce County non-profit community organization that 
+			provides services for Pierce County families in need. He put himself through college studying accounting 
+			and immediately began working for small businesses and charities in the Puget Sound area. He has managed 
+			finances for political organizations, Ruth Dykeman Children’s Center, Navos, and BlueHead Publishing. 
+			By applying his “do more with less” attitude, Corrigan has helped businesses and non-profit community 
+			organizations in the region assist more families and hire more employees than ever before.
+		%p
+			Corrigan volunteers his financial acumen to local organizations looking to improve processes and expand 
+			capacity. He currently serves on the Pierce County Board of Equalization, the Finance Committee of the Greater Seattle Business Association and the Washington Toxics Coalition.
+		%p
+			Corrigan was born in Libby, Montana, a town of 2500 people, where his parents owned a small business, and as a 
+			teenager he moved to the South Puget Sound area where he has lived ever since.
+
+
+
+= render "layouts/right_sidebar"
+	
