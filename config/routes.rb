@@ -14,6 +14,10 @@ WorldUnitingOrg::Application.routes.draw do
   
   match 'contact/enewsletter' => 'contact/enewsletter#index'
   
+  match 'get_involved' => 'get_involved/giving#index'
+  match 'get_involved/volunteer' => 'get_involved/volunteer#index'
+  match 'get_involved/giving' => 'get_involved/giving#index'
+  
   resources :about
   resources :programs
   resources :contact

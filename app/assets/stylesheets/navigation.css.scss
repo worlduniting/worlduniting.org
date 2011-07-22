@@ -90,3 +90,46 @@ color: #6b1c8a;
 
 font-weight: bold;
 }
+
+
+#pagenavlist{
+	margin: 10px 0;
+}
+ul#pagenavlist
+{
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+}
+
+#pagenavlist li
+{
+display: inline;
+list-style-type: none;
+}
+
+#pagenavlist a { 
+	padding: 5px 15px;
+	margin-right: 10px; 
+}
+
+#pagenavlist a:link, #pagenavlist a:visited
+{
+color: #fff;
+background-color: #999;
+text-decoration: none;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#pagenavlist a:hover
+{
+color: #fff;
+background-color: #aaa;
+text-decoration: none;
+}
+
+#pagenavlist li a#current
+{
+background: #6b1c8a;
+}

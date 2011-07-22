@@ -1,0 +1,94 @@
+#home-navigation-container
+	%ul{ :id => "navlist" }
+		%li
+			= link_to "Home", { :controller => "/home" }
+		%li
+			= link_to "About Us", {:controller => "/about"}
+		%li
+			= link_to "Programs", {:controller => "/programs"}
+		%li
+			= link_to "Contact Us", {:controller => "/contact"}
+		%li{ :id => "active" }
+			= link_to "Get Involved", {:controller => "/get_involved"}, :id => "current"
+
+	%ul{ :id => "subnavlist" }
+		%li{ :id => "active" }
+			= link_to "Giving", {:controller => "/get_involved/giving"}, :id => "current"
+		%li
+			= link_to "Volunteer", {:controller => "/get_involved/volunteer"}
+			
+#wrapper
+	#content
+		%h1 Ways You Can Give
+		%h2 Did you know?
+		%hr
+		%p 
+			We are working hard to make every dollar matter as we endeavor to accomplish our mission. World Uniting is a 501(c)(3)* nonprofit organization and your donations are essential to the furtherance of our work.
+		
+		%p
+			Please take a look at the options for giving below to determine which opportunity works best for you.
+				
+		%h2 Give Now
+		%hr
+			%p We are grateful for your one-time donations. Any and every amount is a great help!
+			%p
+				%center
+					%form{ :action => "https://www.paypal.com/cgi-bin/webscr", :method => "post" }
+						%input{ :type => "hidden", :name => "cmd", :value => "_s-xclick" }
+						%input{ :type => "hidden", :name => "hosted_button_id", :value => "NKZ3CUPU3FJUN" }
+						%input{ :type => "image", :src => "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", :border => "0", :name => "submit", :alt => "Paypal - The safer, easier way to pay online!" }
+						%img{ :alt => "", :src => "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", :border => "0", :width => "1", :height => "1" }
+		
+		%h2 Monthly Giving
+		%hr
+			%p
+				Did you know that even $10 a month has real impact?
+				
+				%ul
+					%li  
+						%strong
+							$10 a month
+						allows us to provide one conservative faith pastor (and church) with our
+						= link_to "Over Coffee Conversations", {:controller => "/programs/overcoffeeconversations"}
+						packet, which includes a copy of the book "Over Coffee," event information, and an in-person contact
+						by D.a. Thompson
+
+					%ul
+						%li 
+							we are currently reaching an average of 
+							%strong
+								100 pastors (and churches)
+							a month
+
+		%h2 Planned Giving - Leaving a Legacy
+		%hr
+			%p
+				Estate planning is a powerful way to express your values and to care for your partner, family, and community. Everyone should devote time to creating estate plans, but such plans are especially important for LGBT people, whose lives and loves are not fully recognized by society. With proper planning, you can make sure your wishes are fulfilled, possibly lower your estate tax, and also create powerful change.
+		%h3 Ways to give
+		%p
+			There are many ways to be charitable through your estate. Some of the easiest ways are:
+			%ul
+				%li  
+					Name World Uniting as a beneficiary in your will. Sample bequest language for inclusion in your will can be found here
+				%li
+					Making World Uniting a beneficiary to your life insurance policy or IRA
+				%li
+					Naming World Uniting as the beneficiary of a charitable remainder trust.
+
+		%h2 Workplace
+		%hr
+			%p
+				One of the easiest ways to make a contribution to World Uniting is through your workplace giving program. These programs allow you to designate an amount to be deducted from your paycheck. Look for World Uniting in your company’s listing of charities or you can write in World Uniting in the United Way Donor Option space.
+
+			%p
+				Many businesses offer matching gift programs. It is easy to take advantage of this employee benefit that doubles the impact of your contribution. Check with your Human Resources department to see if your company provides a matching gift program or contact World Uniting’s development office and let us help you.
+
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p &nbsp;
+			%p * - 501(c)(3) status with the IRS is pending the approval of our application, submitted August 1st, 2011.
+
+= render "layouts/right_sidebar"
+	
