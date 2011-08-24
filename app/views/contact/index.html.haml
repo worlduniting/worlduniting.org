@@ -20,20 +20,29 @@
 #wrapper
 	#content
 		%h1 Contact Us
-		%h2 Home Office
+		%h2 U.S. Office
 		%hr
 			%p
 				World Uniting
 				%br/ 
+				902 Market St, Suite 311
+				%br/ 
+				Tacoma, WA 98402
+				%br/
+				253-245-9540
+				%br/
+				= mail_to "info@worlduniting.org", "info@worlduniting.org", :encode => "javascript"
+			%p
+				= render "voice_widget"
+				
+		%h2 Mailing Address
+		%hr
+			%p
 				P.O. Box 7407
 				%br/ 
 				Tacoma, WA 98417
-				%br/
-				253-235-9218
-				%br/
-				= mail_to "info@worlduniting.org", "info@worlduniting.org", :encode => "javascript"
 		
-		%h2 Other Contacts
+		%h2 Other Places to Find Us
 		%hr
 			%p
 				%a{:href => "http://www.facebook.com/pages/World-Uniting/214989735202747", :target => "_blank"} http://www.facebook.com/worlduniting
