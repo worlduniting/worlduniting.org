@@ -18,18 +18,7 @@
 = render "layouts/right_sidebar"
 
 #lower_content_left
-	%h1
-		Recent Stuff
-	%hr
-	%p
-		%em August 26th - 
-		%a{:href => "http://worlduniting.blogspot.com/2011/08/world-uniting-press-launches-bookshop.html", :target => "_blank"} World Uniting Press launches bookShop
-	%p
-		%em July 17th - 
-		%a{:href => "http://worlduniting.blogspot.com/2011/07/worldunitingorg-website-goes-live.html", :target => "_blank"} WorldUniting.org Website Goes Live
-	%p 
-		%em July 4th - 
-		%a{:href => "http://worlduniting.blogspot.com/2011/07/world-uniting-incorporates.html", :target => "_blank"} World Uniting Incorporates
-			
+	= link_to image_tag( "featured_book.png", :title => "Featured Book", :border => "0"), "http://dathompson.com/writings/overcoffee", :target => "_blank", :title => "Featured Book"
+		
 #lower_content_right
-	= link_to image_tag( "featured_book.png", :title => "Featured Book", :border => "0"), "http://dathompson.com/writings", :target => "_blank", :title => "Featured Book"
+	= link_to image_tag( "feature_ad_say_wha.jpg", :title => "Over Coffee", :border => "0"), "http://worlduniting.org/programs/overcoffeeconversations", :target => "_blank", :title => "Featured Book"

@@ -1,10 +1,12 @@
 #lower_content_left {
 	float:left;
-	width:330px;
+	width:340px;
 	border: 1px solid #aaa;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	height: 260px;
+	text-align: center;
+	padding-top: 5px;
 	
 	h1 {
 		font-size: 1.3em;
@@ -31,12 +33,13 @@
 	}
 #lower_content_right {
 	float:right;
-	width:330px;
+	width:340px;
 	border: 1px solid #aaa;
 	margin-right: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 5px;
+	text-align: center;
 }
 
 #unique {
